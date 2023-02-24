@@ -15,7 +15,7 @@
 		<ApplicationTitle>Findovio</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.findovio</ApplicationId>
+		<ApplicationId>com.dwardach.findovio</ApplicationId>
 		<ApplicationIdGuid>e3d05ab2-0c56-420b-9509-d6be8984394a</ApplicationIdGuid>
 
 		<!-- Versions -->
