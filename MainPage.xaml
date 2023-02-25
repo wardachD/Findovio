@@ -3,17 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Findovio.MainPage"
              Shell.NavBarIsVisible="False"
-             xmlns:viewmodels="clr-namespace:Findovio.ViewModels;assembly=Findovio">
+             xmlns:viewModels="clr-namespace:Findovio.ViewModels;assembly=Findovio">
 
-    <StackLayout Orientation="Vertical">
-        <Grid HeightRequest="80%">
+    <ContentPage.BindingContext>
+        <viewModels:MainPageViewModel />
+    </ContentPage.BindingContext>
+    
+    <StackLayout Orientation="Vertical"
+                 BackgroundColor="White">
+        <Grid HeightRequest="130">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Image Source="logo.png2" Aspect="AspectFit" />
         </Grid>
-        <StackLayout HeightRequest="20" VerticalOptions="EndAndExpand">
-            <Button Text="Kliknij mnie" Command="{Binding ButtonClickedCommand}" />
+        <Grid HeightRequest="300">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image Source="findovio.png" Aspect="AspectFit" Margin="90"/>
+        </Grid>
+        <StackLayout HeightRequest="100" VerticalOptions="EndAndExpand">
+            <Button Text="Rozpocznij" 
+                    HeightRequest="65"
+                    WidthRequest="180"
+                    BackgroundColor="Black"
+                    BorderColor="Black"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Opacity="0.9"
+                    Command="{Binding GoToNextScreenCommand}"/>
         </StackLayout>
     </StackLayout>
     

@@ -1,18 +1,18 @@
-﻿using Microsoft.Maui.Controls;
-using System.Windows.Input;
+﻿using System.Windows.Input;
+using Microsoft.Maui.Controls;
 
 namespace Findovio.ViewModels
 {
-    public class MainPageViewModel : BindableObject
+    public class MainPageViewModel : BaseViewModel
     {
-        public ICommand ButtonClickedCommand { get; }
+        private ICommand goToNextScreenCommand;
 
-        public MainPageViewModel()
+        public ICommand GoToNextScreenCommand =>
+            goToNextScreenCommand ??= new Command(OnGoToNextScreen);
+
+        private async void OnGoToNextScreen()
         {
-            ButtonClickedCommand = new Command(() =>
-            {
-                // Tutaj możesz dodać kod wykonywany po kliknięciu przycisku
-            });
+            await Shell.Current.GoToAsync("NextScreen");
         }
     }
 }
