@@ -3,12 +3,25 @@
     x:Class="Findovio.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Findovio"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:Findovio.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.PresentationMode="Modal">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+    <TabBar>
+        <Tab Title="Szukaj" Icon="mainpage.png">
+            <ShellContent Route="MainPage" ContentTemplate="{DataTemplate local:MainPage}"/>
+            <ShellContent Route="SearchPage" ContentTemplate="{DataTemplate local:SearchPage}"/>
+        </Tab>
+        <Tab Title="Wizyty" Icon="reservationspage.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ReservationsPage}" />
+        </Tab>
+        <Tab Title="Zapisane" Icon="favoritepage.png">
+            <ShellContent ContentTemplate="{DataTemplate local:FavoritePage}" />
+        </Tab>
+        <Tab Title="Wiadomości" Icon="messagespage.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MessagesPage}" />
+        </Tab>
+    </TabBar>
 
 </Shell>

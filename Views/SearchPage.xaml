@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Findovio.Views.SearchPage"
+             xmlns:model="clr-namespace:Findovio.Models"
+             xmlns:viewModels="clr-namespace:Findovio.ViewModels"
+             x:DataType="viewModels:SearchPageViewModels"
+             Title=""
+             NavigationPage.HasNavigationBar="True">
+    
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Wpisz swój kod pocztowy, nazwę salonu lub usługi której szukasz." 
+                    WidthRequest="350"
+                    HeightRequest="65"
+                    FontSize="Medium"
+                   VerticalOptions="Start"/>
+            <SearchBar Placeholder="Wyszukaj..." 
+                       VerticalOptions="Center" 
+                       WidthRequest="400" 
+                       Background="WhiteSmoke" 
+                       x:Name="searchBar"
+                       SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"
+                       SearchCommand="{Binding GetSalonsCommand}" />
+
+            <ListView ItemsSource="{Binding Salons}">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Salons">
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding name}" FontAttributes="Bold" TextColor="Black" />
+                                <Label Text="{Binding addressStreet}" />
+                                <Label Text="{Binding addressCity}" />
+                                <Label Text="{Binding addressPostCode}" />
+                                <!-- Dodaj inne potrzebne kontrolki -->
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Label x:Name="resultLabel"
+               Text="Results will be shown here."
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+        
+        
+    </ScrollView>
+    
+</ContentPage>

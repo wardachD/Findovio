@@ -1,0 +1,97 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Findovio.Views.PermissionsOnLaunchPage"
+             Title="PermissionsOnLaunchPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasBackButton="False"
+             xmlns:viewModels="clr-namespace:Findovio.ViewModels;assembly=Findovio">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout>
+
+            <!-- Logo -->
+            <HorizontalStackLayout
+                HeightRequest="30">
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                HeightRequest="70"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
+                <Image Source="findovio.png"
+                       HeightRequest="80"
+                       Aspect="AspectFit"/>
+            </HorizontalStackLayout>
+
+            <!-- Tekst -->
+            <VerticalStackLayout
+                Padding="40">
+                <Label 
+                    HorizontalTextAlignment="Center"
+                    Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis arcu ex, id venenatis lorem efficitur eget. Praesent quis lectus quam."/>
+            </VerticalStackLayout>
+
+            <!-- Trzy wiersze z dwoma kolumnami każdy -->
+            <VerticalStackLayout
+                Margin="25"
+                WidthRequest="320">
+
+                <!-- Wiersz 1 -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Lokalizacja"  
+                           Grid.Column="0" 
+                           HorizontalOptions="Start" 
+                           VerticalOptions="Center"/>
+                    <Switch IsToggled="{Binding IsLocationAccessAllowed}"
+                            Grid.Column="1" 
+                            HorizontalOptions="End">
+                        <Switch.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleLocationAccessCommand}" />
+                        </Switch.GestureRecognizers>
+                    </Switch>
+                </Grid>
+
+                <!-- Wiersz 2 -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Aparat" 
+                           Grid.Column="0" 
+                           HorizontalOptions="Start" 
+                           VerticalOptions="Center"/>
+                    <Switch IsToggled="{Binding IsCameraAccessAllowed}"
+                            Grid.Column="1" 
+                            HorizontalOptions="End">
+                        <Switch.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleCameraAccessCommand}" />
+                        </Switch.GestureRecognizers>
+                    </Switch>
+                </Grid>
+                <Button Text="Rozpocznij" 
+                    HeightRequest="65"
+                    WidthRequest="180"
+                    BackgroundColor="Black"
+                    BorderColor="Black"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Opacity="0.9"
+                    Command="{Binding tryGoToNextScreenCommand}"/>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+
+        <!-- Button Rozpocznij -->
+        
+    </Grid>
+
+</ContentPage>

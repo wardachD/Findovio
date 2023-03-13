@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "findovio-client",
+  "private_key_id": "e01815ded9ae906fbf380e1d8c1c44a85a2c159c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCuBMKPeSeDb4Rw\ndc/SY1S592G+l+AGFtolkczwN91EnD9WZEjhD1ZV96NOe8tT1aXhXY176EfYy3Kd\nFr9uJqZwMggs6O3Z7/dlvSG2DlV/3lZ/BbfSWnnOUOv7ltCIGyRdk+RWPrn7KkHG\nF6gNT+k8sdlc3me+pHK45eL2d1QlxuRCP0Wur8gO/4n30B/sldmkx30pirs7+vWM\nvmwhIMV96KP6KNlxKQgFzq5rpob53Nf8GmqxsFKMQrN5YGDGB1Sptp/VCMwIfr4y\nWiDTyjcKC1aGGIC4QfSjtI3w6tagjGzZ71isf+mc1vmsXBcleP8gBe6udUawpEmI\n7aCI26TNAgMBAAECggEAAW43FjxZ+43fYhhJ1tIruGKk+k7fz9UAwpXOADyJVF7P\nc3ucEMOSQ18nh8XjQENtm2psNxRMAOd9P/bXqIVnUV1L7WiVyfibyUmSfR9liwlO\nHzmyDufg//Xw1q7g9Hl6pU1Jr37RAxRQGZuIrWFWisHwhj+qzSmnasczBDErbysN\nqC2jrkdzkLRHbQcX0ue2Pu6Pyzy2LbtGf0j1c7LeZkHafLKQIIi3ucI4C14SIjq5\n642PpWgmKaFZfjdCV8Tvc+SD10a7GHrxo84D49bGyXCI2jnRzqVB6kSWkP5Js3er\nLqeAU5IRwAMz7tZ2yzV3Nea5sLOwXU/wYmtw5TaegQKBgQDrVDrF+WfaFLo3jUK1\nIdLsu5tiy6m41E4/aoHTU5E6269HMvBetumMF/6wi8hDz4NHf/2s4t7EYeUkH7Tv\n0dy/VfBjFjYErVK1rsNz+i0Bb5e0Tg1SmcUzBQbpSpeHPd4P5SFufjtKPtJIPOQr\nQ+wblcZNitL1qCVcZpiKb14GgQKBgQC9Tdymtgy5wNlG3cXqI7iEx4bBAsL+oW4e\nDKMfM87uPdeZGeCJaWxiKXkg4KUfRBNnuYmUmg2DV2HlkDHjODi7qRVcj/wPmeBO\nAkR/EKe44uG8OtAfwvxPzbgOkyZuvpIE5UYkl85jsavcicVP8RuZHqbvsj5hMEQm\nGnTF9ZuwTQKBgQDAqr1TyNYV3lJ3mNe8pGykFRUq1cOm52sI0JJqCkkk/yeKC1Jw\nuSCM6jhDIq5bllHNACUYnsXz0pJf+PWSQyeQHzQoa87eFWlaBjNPiMvAGTUDEcQm\nlG63Tq5R4hgdSbG9IcM1S3QPXU+chP3pzjpIe19XrQj6xyePdw/8hyFcAQKBgQCV\nWPBTthykD7lbZ2vVJQlV9/QgIgWkzccKff3TiBQhcTi+2OOEhV+0sfOWNKUQ3axR\nkNcyHbe7fx0E95XkJV7c7rCjrhS2WjfUU4WmmYU5IAXncp7v7+0PKMWk+gLALCkX\nI6sLA5kYnftwqmC4iQe07bHWOVFta57YUNb/tp11oQKBgAD+yCkxYd3ErFwKZt26\n2N+Zou0SgJe688VvR+F8deGrkdpTH6FiOp7g95i4hId6ikcbrqotDmiPlddHGqP7\niDzgFUggd+pQCJm7xK3R83I35SrUNLiixNRT7DgaZ1+KWYQdq3y3NEgVZi0nED+c\ncpbsS1GY3oWaXBCArLhj0Fz2\n-----END PRIVATE KEY-----\n",
+  "client_email": "findovio@findovio-client.iam.gserviceaccount.com",
+  "client_id": "105877040493266568513",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/findovio%40findovio-client.iam.gserviceaccount.com"
+}

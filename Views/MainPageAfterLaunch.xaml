@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:Microsoft.Maui.Controls.Compatibility;assembly=Microsoft.Maui.Controls.Compatibility"
+             xmlns:views="clr-namespace:Findovio.Views"
+             x:Class="Findovio.Views.MainPageAfterLaunch">
+
+
+    <StackLayout Orientation="Vertical">
+
+        <!-- Logo -->
+        <StackLayout Orientation="Horizontal"
+                     HeightRequest="50"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Image Source="logo.png"
+                   HeightRequest="50"
+                   Aspect="AspectFit"/>
+        </StackLayout>
+
+        <!-- Tekst -->
+        <StackLayout Orientation="Vertical"
+                     Padding="20">
+            <Label Text="Miejsce na tekst"/>
+        </StackLayout>
+
+        <!-- Trzy wiersze z dwoma kolumnami każdy -->
+        <StackLayout Orientation="Vertical"
+                     Padding="20">
+
+            <!-- Wiersz 1 -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tekst w pierwszej kolumnie"/>
+                <Image Source="obrazek.png"
+                       HeightRequest="30"
+                       WidthRequest="30"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+
+            <!-- Wiersz 2 -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tekst w pierwszej kolumnie"/>
+                <Image Source="obrazek.png"
+                       HeightRequest="30"
+                       WidthRequest="30"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+
+            <!-- Wiersz 3 -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tekst w pierwszej kolumnie"/>
+                <Image Source="obrazek.png"
+                       HeightRequest="30"
+                       WidthRequest="30"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
+

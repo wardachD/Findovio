@@ -1,11 +1,18 @@
-﻿namespace Findovio;
+﻿using Findovio.Views;
+using Findovio.Auth0;
 
-public partial class App : Application
+namespace Findovio
 {
-	public App()
-	{
-		InitializeComponent();
+    public partial class App : Application
+    {
+        const string isFirstLaunchKey = "IsFirstLaunch";
 
-		MainPage = new AppShell();
-	}
+        public App()
+        {
+            InitializeComponent();
+            // Not the first launch, show the AppShell
+            MainPage = new AppShell();
+        }
+        
+    }
 }

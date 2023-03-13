@@ -9,7 +9,7 @@
              xmlns:viewModels="clr-namespace:Findovio.ViewModels"
              x:DataType="viewModels:MainPageViewModel">
 
-
+   
     <ContentPage.Behaviors>
         <toolkit:StatusBarBehavior StatusBarColor="LightGray" />
     </ContentPage.Behaviors>
@@ -26,7 +26,7 @@
                        HorizontalOptions="Center"
                        HeightRequest="40"
                        x:Name="LabelText1NotFocused"/>
-
+                
                 <Label Text="Znajdź w Holandii swoje ulubione salony kosmetyczne, barberów, masaże. Wszystko w jednym miejscu." 
                        FontSize="Small" 
                        HorizontalTextAlignment="Center"
